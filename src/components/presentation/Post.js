@@ -13,7 +13,7 @@ import DoubleClick from 'react-native-double-click';
 
 import config from './config/index';
 
-class InstaClone extends React.Component {
+class Post extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -109,14 +109,7 @@ class InstaClone extends React.Component {
 
     return (
       <View style={{ flex: 1, width: 100 + '%', height: 100 + '%' }}>
-        <View style={styles.tempNav}>
-          <Image style={{height: 25, width: 25, marginLeft: 20}} source={config.images.cameraIcon}/>
-          <Image style={{height: 31, width: 110, marginLeft: 35}} source={config.images.instagramLogo}/>
-          <View style={{ flexDirection: 'row'}}>
-            <Image style={{height: 25, width: 25, marginRight: 15}} source={config.images.tvIcon}/>
-            <Image style={{height: 25, width: 25, marginRight: 20}} source={config.images.messageIcon}/>
-          </View>
-        </View>
+
 
         <View style={styles.userBar}>
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -179,17 +172,6 @@ class InstaClone extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  tempNav: {
-    width: 100 + '%',
-    height: 55,
-    marginTop: 40,
-    backgroundColor: 'rgb(250,250,250)',
-    borderBottomColor: 'rgb(234,234,234)',
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    flexDirection: 'row'
-  },
 
   userBar: {
     width: 100 + '%',
@@ -230,4 +212,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default InstaClone;
+export default Post;

@@ -7,8 +7,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "node-emoji": "^1.8.1",
     "react": "16.4.1",
-    "react-native": "0.56.0"
+    "react-native": "0.56.0",
+    "react-native-double-click": "^1.0.5"
   },
   "devDependencies": {
     "babel-jest": "23.2.0",
